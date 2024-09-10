@@ -1,0 +1,130 @@
+/* Fonte customizada para o estilo do jogo */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap');
+
+body {
+    background-color: #000000; /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh; /* Preencher a altura da tela */
+    text-align: center;
+}
+
+/* Estilo do cabeçalho */
+header {
+    width: 100%;
+    background-color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 300px;
+    filter: drop-shadow(4px 4px 20px #ffffff); /* Sombra cinza para a logo */
+}
+
+/* Seção principal */
+main {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Seção de pesquisa */
+section {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    text-align: center;
+    width: 250px;
+    padding: 10px;
+    border: 2px solid #888888; /* Borda cinza */
+    background-color: #333333; /* Fundo escuro para o input */
+    color: #ffffff; /* Texto branco */
+    border-radius: 4px;
+    margin-right: 10px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #ffffff; /* Cor da borda branca ao focar */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #444444; /* Botão cinza escuro */
+    color: #ffffff; /* Texto branco */
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555555; /* Tom de cinza mais claro ao passar o mouse */
+}
+
+/* Estilo dos personagens */
+section div {
+    margin-top: 20px;
+    background-color: #222222; /* Fundo escuro para o bloco de personagem */
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra suave para destaque */
+    transition: transform 0.3s;
+}
+
+section div:hover {
+    transform: scale(1.05); /* Aumenta levemente o tamanho ao passar o mouse */
+}
+
+h2 {
+    color: #ffcc00; /* Cor dourada para os títulos dos personagens */
+    margin-bottom: 10px;
+}
+
+p {
+    color: #dddddd; /* Texto cinza claro para descrição dos personagens */
+    line-height: 1.6;
+}
+
+a {
+    color: #00ccff; /* Cor ciano para os links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ffffff; /* Cor branca ao passar o mouse sobre o link */
+}
+
+/* Rodapé */
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #000000;
+    color: #888888; /* Texto cinza */
+    border-top: 2px solid #ffffff;
+    text-align: center;
+    margin-top: auto;
+}
